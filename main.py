@@ -1,6 +1,8 @@
 import os
 from dotenv import load_dotenv
 from google import genai
+from rich.console import Console
+from rich.markdown import Markdown
 
 
 load_dotenv()
@@ -14,6 +16,8 @@ def chat_with_gemini(prompt: str) -> str:
 
 
 if __name__ == "__main__":
+    console = Console()
+
     while True:
         user_input = input("You: ")
         if user_input.lower() in ["quit", "exit", "bye"]:
@@ -22,4 +26,5 @@ if __name__ == "__main__":
             os.system("cls" if os.name == "nt" else "clear")
         else:
             response = chat_with_gemini(user_input)
-            print("Chatbot: ", response)
+            markdown = Markdown(response)
+            console.print("Chatbot: ", markdown)

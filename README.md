@@ -7,6 +7,7 @@ The goal of this project was to build a chatbot that could be accessed from the 
 - Python 3.12.9
 - google-genai 1.28.0
 - python-dotenv 1.1.0
+- rich 14.1.0
 
 ## Setup
 The following instructions assume the user has Ubuntu as their local machine's OS. Most instructions should work for other Linux distributions as well, though mileage may vary.
