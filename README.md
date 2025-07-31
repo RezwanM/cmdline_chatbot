@@ -4,7 +4,7 @@ The goal of this project was to build a chatbot that could be accessed from the 
 
 ## Preview
 
-    $ python3 ./main.py 
+    $ python3 <project_root>/main.py 
     Welcome to the Cmdline Chatbot (powered by Gemini)!
 
     Start by entering a prompt.
