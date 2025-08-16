@@ -68,3 +68,7 @@ Run the application from the command-line. For quitting the application, press C
     
     cd <project_root>
     python3 ./main.py
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
