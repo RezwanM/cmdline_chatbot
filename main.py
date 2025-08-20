@@ -18,7 +18,7 @@ def chat_with_gemini(prompt: str) -> str:
 if __name__ == "__main__":
     console = Console()
 
-    print("Welcome to the Cmdline Chatbot (powered by Gemini)!\n")
+    print("Welcome to the AI Chatbot (powered by Gemini)!\n")
     print("Start by entering a prompt.")
     print('(For quitting the application, type "quit".)')
     print('(For clearing the screen, type "clear".)\n')
@@ -33,4 +33,4 @@ if __name__ == "__main__":
             response = chat_with_gemini(user_input)
             markdown = Markdown(response)
             console.print("Chatbot: ", markdown)
-    print("\nThank you for using the Cmdline Chatbot. Until next time!")
+    print("\nThank you for using the AI Chatbot. Until next time!")

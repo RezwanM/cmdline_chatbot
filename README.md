@@ -1,11 +1,11 @@
-# cmdline_chatbot
+# AI Chatbot
 
 The goal of this project was to build a chatbot that could be accessed from the terminal. It uses Google Gemini's API for accessing the Gemini models.
 
 ## Preview
 
     $ python3 <project_root>/main.py 
-    Welcome to the Cmdline Chatbot (powered by Gemini)!
+    Welcome to the AI Chatbot (powered by Gemini)!
 
     Start by entering a prompt.
     (For quitting the application, type "quit".)
@@ -16,7 +16,7 @@ The goal of this project was to build a chatbot that could be accessed from the 
     AI learns patterns from data to make smart predictions or decisions.
     You: quit
 
-    Thank you for using the Cmdline Chatbot. Until next time!
+    Thank you for using the AI Chatbot. Until next time!
 
 ## Requirements
 
