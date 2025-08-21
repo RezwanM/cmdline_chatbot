@@ -11,9 +11,19 @@ The goal of this project was to build a chatbot that could be accessed from the 
     (For quitting the application, type "quit".)
     (For clearing the screen, type "clear".)
 
-    You: Explain how AI works in a few words
+    You: Top 3 highest mountains in the world.
     Chatbot:
-    AI learns patterns from data to make smart predictions or decisions.
+    Here are the top 3 highest mountains in the world:
+
+     1 Mount Everest
+        • Height: 8,848.86 meters (29,031.7 feet)
+        • Location: Border of Nepal and China (Tibet Autonomous Region) in the Himalayan range.
+     2 K2 (Mount Godwin Austen)
+        • Height: 8,611 meters (28,251 feet)
+        • Location: Border of Pakistan (Gilgit-Baltistan) and China (Xinjiang) in the Karakoram range.
+     3 Kangchenjunga
+        • Height: 8,586 meters (28,169 feet)
+        • Location: Border of Nepal and India (Sikkim) in the Himalayan range.
     You: quit
 
     Thank you for using the AI Chatbot. Until next time!

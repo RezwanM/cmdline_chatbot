@@ -14,9 +14,11 @@ def chat_with_gemini(prompt: str) -> str:
     response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
     return response.text
 
-
-if __name__ == "__main__":
+def main():
     console = Console()
+    right_pad = "\x1b[0m"
+    user_left_pad = "\x1b[36m"
+    chatbot_left_pad = "\x1b[33m"
 
     print("Welcome to the AI Chatbot (powered by Gemini)!\n")
     print("Start by entering a prompt.")
@@ -24,7 +26,7 @@ if __name__ == "__main__":
     print('(For clearing the screen, type "clear".)\n')
 
     while True:
-        user_input = input("You: ")
+        user_input = input(user_left_pad + "You: " + right_pad)
         if user_input.lower() == "quit":
             break
         elif user_input.lower() == "clear":
@@ -32,5 +34,9 @@ if __name__ == "__main__":
         else:
             response = chat_with_gemini(user_input)
             markdown = Markdown(response)
-            console.print("Chatbot: ", markdown)
+            print(chatbot_left_pad + "Chatbot: " + right_pad)
+            console.print(markdown)
     print("\nThank you for using the AI Chatbot. Until next time!")
+
+if __name__ == "__main__":
+    main()
